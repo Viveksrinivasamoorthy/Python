@@ -1,0 +1,61 @@
+--SQL BASIC CLAUSES
+
+--SELECT - WHAT DATA   -- which column-name
+--FROM   - WHICH TABLE -- table name
+--WHERE  - CONDITION   -- filter rows
+
+------------------------------
+
+select employee_id,first_name
+from employees;
+
+
+select salary from employees;
+
+
+select * from employees;
+
+--(*) all columns
+--(;) end query
+
+--comparission operators:
+
+--(=) -- equal
+--(<) -- less than
+--(>) -- greater than
+--(<=)-- less than or equal
+--(>=)-- greater than or equal
+--(<>) or (!=)-- not equal
+
+
+select * from employees
+where salary = 24000;
+
+select * from employees
+where salary = 17000;
+
+selecT * fRoM eMplOyEeS
+where fiRsT_nAme = 'Steven';
+
+select * from employees
+where salary < 10000;
+
+select * from employees
+where salary > 10000;
+
+select * from employees
+where salary >= 10000;
+
+select * from employees
+where salary <= 10000;
+
+select * from employees
+where salary <> 17000;
+
+select * from employees
+where salary != 17000;
+
+create table stu_1
+(stu_id number(3));
+
+drop table stu_1;
